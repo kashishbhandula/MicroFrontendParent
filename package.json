@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true next dev",
-    "build": "npm install && next build",
-    "start": "node server.js",
+    "build": "NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "start": "next start",
     "lint": "next lint",
     "check-build": "NEXT_PRIVATE_LOCAL_WEBPACK=true  next build",
     "check-format": "prettier --check .",

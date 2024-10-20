@@ -10,13 +10,12 @@ export default function HomePage() {
   return (
     <div suppressHydrationWarning={true}>
       This is host home page
-      <br>s ds kk</br>
+      {/* <br>s ds kk</br> */}
       <RemoteComponent />
     </div>
   );
 }
 export async function getServerSideProps() {
-  await revalidate();
   return {
     props: { val: "Remote Server Side Loaded hurr9999r" },
   };
